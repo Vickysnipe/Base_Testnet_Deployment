@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="overflow-hidden">
+<head><base href="/">
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Remix - Ethereum IDE</title>
+<link rel="stylesheet" href="assets/css/pygment_trac.css">
+<link rel="icon" type="x-icon" href="assets/img/remix-logo-blue.png">
+<link rel="stylesheet" href="assets/css/intro.js/4.1.0/introjs.min.css">
+<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+<script src="assets/js/browserfs.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="assets/js/loader.js"></script>
+<script type="text/javascript" src="assets/js/intro.min.js"></script>
+<script type="text/javascript" src="assets/js/parser/antlr.js"></script>
+<script src="runtime.0.48.0.1713972302298.js" type="module"></script><script src="polyfills.0.48.0.1713972302298.js" type="module"></script><script src="main.0.48.0.1713972302298.js" type="module"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"87ce998e9d734895","version":"2024.4.1","token":"b0ac75650ef241c6b9d979fc00a5cc45"}' crossorigin="anonymous"></script>
+</body>
+</html>

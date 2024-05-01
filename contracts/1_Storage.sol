@@ -1,29 +1,20 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-pragma solidity >=0.8.2 <0.9.0;
+contract BasicMath {
+    uint256 constant MAX_INT = type(uint256).max;
 
-/**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
-contract Storage {
-
-    uint256 number;
-
-    /**
-     * @dev Store value in variable
-     * @param num value to store
-     */
-    function store(uint256 num) public {
-        number = num;
+    function adder(uint256 _a, uint256 _b) external pure returns (uint256 sum, bool error) {
+        if (_b > MAX_INT - _a) {
+            return (0, true); // Overflow occurred
+        }
+        return (_a + _b, false);
     }
 
-    /**
-     * @dev Return value 
-     * @return value of 'number'
-     */
-    function retrieve() public view returns (uint256){
-        return number;
+    function subtractor(uint256 _a, uint256 _b) external pure returns (uint256 difference, bool error) {
+        if (_b > _a) {
+            return (0, true); // Underflow occurred
+        }
+        return (_a - _b, false);
     }
 }
